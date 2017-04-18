@@ -1,1 +1,1 @@
-# perf This is my perfect paddles project
+# This is my perfect paddles project
