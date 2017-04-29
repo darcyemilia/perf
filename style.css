@@ -1,0 +1,166 @@
+.container {
+  max-width: 1140px;
+  margin: 0
+  border: 3px pink;
+  background-color: steelblue;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.rentals {
+  width: 100%
+}
+
+
+@media (max-width: 600px){
+
+  .rentals {
+    width: 30%;
+  }
+
+}
+
+
+@media (max-width: 800px){
+  .rentals {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 1180px){
+    .rentals {
+      width: 100%;
+    }
+
+}
+
+
+
+.header {}
+
+.header__logo {}
+
+.header__nav {}
+
+.header__nav-list {}
+
+.header__nav-list-item {}
+
+.header__nav-link {}
+
+
+.banner {
+}
+
+.banner__title {
+  text-align: center;
+}
+
+.banner__span {
+  display: block;
+}
+
+.banner__span--enjoy {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: karla, helvetica, arial, sans-serif;
+  color: white;
+}
+
+.banner__span--outdoors {
+  font-size: 60px;
+  font-family: Pacifico, cursive;
+  color: white;
+}
+
+.banner__span--water {
+  font-size: 30px;
+  font-family: pacifico, cursive;
+  color: white;
+}
+
+.transbox {
+  margin: 20%;
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: karla, helvetica,arial,sans-serif;
+  font-size: 14px;
+}
+.transbox {
+  margin: 5%;
+  background-color: black;
+  border: 1px solid black;
+  opacity:0.6;
+  filter: alpha(opacity=60);
+}
+
+
+
+.btn-signup {
+  color: white;
+  background-color: #e2574c;
+  font-family: karla, helvetica, arial, sans-serif;
+  font-style: bold;
+  border-radius: 75px;
+  border: none;
+  font-size: 20px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  margin: 50px auto;
+  display: block;
+
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.header__nav-list {
+  background-color: black;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header__nav-list {
+  content: "";
+  margin-left: auto;
+}
+
+.header__nav-link {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  margin: 10% auto;
+}
+.header__nav-list-item {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-family: Karla-bold, helvetica,arial, sans-serif;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px;
+}
+
+
+@media (min-width: 600px){
+}
+
+@media (min-width: 800px){
+  img {max-width: 50%;}
+}
+
+
+@media (min-width: 1100px){
+  img {max-width: 30%;
+  }
+}

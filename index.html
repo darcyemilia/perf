@@ -2,55 +2,88 @@
 <html>
   <head>
     <title>Perfect Paddles Project</title>
+
     <meta charset="utf-8">
     <meta name="viewport:" content="width=device-width, initial-scale=1">
     <meta name="description" content="Vancouver Kayak Rental">
     <meta name="author" content="Darcy Drake">
+
+    <link rel="stylesheet" href="style.css">
+
   </head>
 
   <body>
+  <div>
 
-      <img src="images/perfect-paddles-logo.svg" alt="Perfect Paddles Logo">
+<!--
 
-    <nav>
-      <ul>
-        <li> <a href="#About">About</a> </li>
-        <li> <a href="#Rentals">Rentals</a> </li>
-        <li> <a href="#Location">Location</a> </li>
-      </ul>
+    <audio controls loop>
+      <source src="prettyholiday.mp3" type="audio/mp3" />
+    </audio>
+
+    <video src="boatsmaze.mp4">
+    </video>
+-->
+
+  <div class="container">
+      <img class="header__logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles Logo">
+  </div>
+<header>
+  <div class="container">
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item">
+            <a class="header__nav-link" href="#About">About</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a class="header__nav-link" href="#Rentals">Rentals</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a class="header__nav-link" href="#Location">Location</a>
+          </li>
+        </ul>
     </nav>
-
-    <header>
+  </div>
+    <div class="container">
       <img src="images/kayak-bkgd.jpg" alt="Perfect Paddles Background">
 
-      <section id="banner" class="banner">
-        <h1>Enjoy The</h1>
-        <h1>Great Outdoors</h1>
-        <h1>from the water</h1>
-      </section>
-      <section>
-        <p>Rent our canoes year-round, take a lesson, or join a group tour.</p>
-      </section>
+      <section class="banner">
+        <h1 class="banner__title">
+          <div class="banner__title">
+            <span class="banner__span banner__span--enjoy">
+              Enjoy The
+            </span>
+            <span class="banner__span banner__span--outdoors">
+              Great Outdoors
+            </span>
+            <span class="banner__span banner__span--water">
+              from the water
+            </span>
+          </div>
+        </h1>
 
+        <div class="transbox">
+          <p>Rent our canoes year-round, take a lesson, or join a group tour.</p>
+        </div>
 
-
-    </header>
-
-    <section>
-      <button>Sign me up!</button>
+      <button class="btn-signup">
+        Sign me up!
+      </button>
     </section>
+  </div>
+  </header>
 
   <main>
     <section>
+      <div class="container">
+            <h1>Perfect Paddles Project</h1>
+              <a name="about"></a>
+              <h2>About</h2>
 
-      <h1>Perfect Paddles Project</h1>
-<a name="about"></a>
-      <h2>About</h2>
-
-        <p>
-        Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great outdoors in one of our single or double kayaks.  We cater to all skill levels and abilities, and offer a variety of lessons and tours too.
-        </p>
-
+                <p>
+                  Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great outdoors in one of our single or double kayaks.  We cater to all skill levels and abilities, and offer a variety of lessons and tours too.
+                </p>
+      </div>
 
         <img src="images/sunset-kayak.jpg" alt="Kayak at Sunset">
 
@@ -62,11 +95,13 @@
 
 
     <section>
+      <div class="container">
+
       <h2>Rentals</h2>
 
-        <p>
+        <p class="rentals">
           All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.
-          <p>Please note that we require 24 hours notice for all cancellations, and late returns will be charged accordingly.
+          <p class="rentals">Please note that we require 24 hours notice for all cancellations, and late returns will be charged accordingly.
           </p>
             <p>Call (604) 604-6040 to book now!
             </p>
@@ -103,10 +138,14 @@
 
 
             </p>
+          </div>
+
         </section>
 
 
+
       <section>
+        <div class="container">
         <h2>Location</h2>
 
           <p>
@@ -120,42 +159,45 @@
      allowfullscreen>
     </iframe>
 
-
-
+    </div>
 
       </section>
+
 <footer>
-  <p>©2017 Perfect Paddles Kayak Co.
-Powered by HTML and CSS.
-</p>
-<p>
-<a href="tel:+1-604-604-6040">604-604-6040</a>
+  <div class="container">
 
-<a href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a>
-</p>
+      <p>©2017 Perfect Paddles Kayak Co.
+    Powered by HTML and CSS.
+    </p>
+    <p>
+    <a href="tel:+1-604-604-6040">604-604-6040</a>
 
-<p>
-Cornwall Avenue & Yew Street
-Vancouver, BC, Canada
-</p>
-<nav>
-  <ul>
-social links
+    <a href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a>
+    </p>
 
-<li>  <a href="https://facebook.com" target="_blank">Facebook</a>
-</li>
-<li>  <a href="https://twitter.com" target="_blank">Twitter</a>
-</li>
-<li>  <a href="https://instagram.com" target="_blank">Instagram</a>
-</li>
-<li>  <a href="https://pinterest.com" target="_blank">Pinterest</a>
-</li>
-<li>  <a href="https://plus.google.com" target="_blank">Google+</a>
-</li>
-  </ul>
-</nav>
+    <p>
+    Cornwall Avenue & Yew Street
+    Vancouver, BC, Canada
+    </p>
+    <nav>
+      <ul>
+    social links
 
+    <li>  <a href="https://facebook.com" target="_blank">Facebook</a>
+    </li>
+    <li>  <a href="https://twitter.com" target="_blank">Twitter</a>
+    </li>
+    <li>  <a href="https://instagram.com" target="_blank">Instagram</a>
+    </li>
+    <li>  <a href="https://pinterest.com" target="_blank">Pinterest</a>
+    </li>
+    <li>  <a href="https://plus.google.com" target="_blank">Google+</a>
+    </li>
+      </ul>
+    </nav>
+  </div>
 </footer>
     </main>
-  </body>
+</div>
+</body>
 </html>
