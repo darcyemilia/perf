@@ -6,43 +6,75 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
+  clear: both;
 }
 
-.section-body-paragraphs {
-  width: 100%
+.header-container {
+  max-width: 1140px;
+  margin: 0;
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-/*
-@media (max-width: 600px){
-
-  .section-body-paragraphs {
-    width: 70%;
-  }
-
-}
-*/
-
-
 
 
 .header {}
 
-.header__logo {}
+.header__nav {
 
-.header__nav {}
-
-.header__nav-list {}
-
-.header__nav-list-item {}
-
-.header__nav-link {}
-
-
-.banner {
 }
 
+
+  .header__logo {
+    display: block;
+    position: absolute;
+    left:auto;
+    top: auto;
+  max-width: 80%;
+  }
+/*
+  .header__nav-list {
+    background-color: black;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    content: "";
+}
+*/
+  .header__nav-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-family: Karla-bold, helvetica,arial, sans-serif;
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    content: "";
+  }
+
+
+
+
+
+
+
+
+  .banner {
+    background-image: url("images/kayak-bkgd.jpg");
+    background-size: cover;
+    background: linear-gradient (to top,
+      rgba (0,0,0, .25) 0%;
+      )
+  }
+
+
 .banner__title {
+  padding: 36px;
   text-align: center;
 }
 
@@ -52,21 +84,21 @@
 
 .banner__span--enjoy {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 120%;
   font-family: karla, helvetica, arial, sans-serif;
   color: white;
 }
 
 .banner__span--outdoors {
-  font-size: 60px;
-  line-height: 120%;
+  font-size: 80px;
+  line-height: 175%;
   font-family: Pacifico, cursive;
   color: white;
 }
 
 .banner__span--water {
-  font-size: 30px;
+  font-size: 60px;
   line-height: 150%;
   font-family: pacifico, cursive;
   color: white;
@@ -75,10 +107,7 @@
 .transbox {
   margin: 20%;
   padding: 20px;
-  font-weight: bold;
-  color: white;
-  font-family: karla, helvetica,arial,sans-serif;
-  font-size: 14px;
+
 }
 .transbox {
   margin: 5%;
@@ -87,7 +116,6 @@
   opacity:0.6;
   filter: alpha(opacity=60);
 }
-
 
 
 .btn-signup {
@@ -106,65 +134,27 @@
 }
 
 
-
-.header__logo {
-background-color: black;
-display: block;
-margin: 0 auto;
+.main {
+  margin: 5px;
 }
 
-
-
-
-.header__nav-list {
-  background-color: black;
-  text-align: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-
-.banner {
-  background-image: url("images/kayak-bkgd.jpg");
-
-}
-
-.header__nav-list {
-  content: "";
-  margin-left: auto;
-}
-
-.header__nav-link {
-  display: inline;
-  text-decoration: none;
-  color: white;
-  position: relative;
-  margin: 10% auto;
-}
-
-.header__nav-list-item {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  text-decoration: none;
-  font-family: Karla-bold, helvetica,arial, sans-serif;
-  font-style: bold;
-  text-transform: uppercase;
-  font-size: 20px;
-  padding: 15px;
-}
-
-
-
-
-
-img {
+/*img {
   max-width: 100%;
+}*/
+
+.images-in-a-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+
 }
 
+.images-in-a-box img {
+  width: 100%;
+  margin: 5px 0;
+  box-shadow: grey 2px 2px;
+}
 
 
 .section-title {
@@ -175,10 +165,28 @@ img {
 
 .section-body-paragraphs {
   text-align: center;
+  width: 100%;
+  font-family: karla, helvetica, sans-serif;
+  color: #2b2b2b;
+}
+
+.banner-sub-head {
+  text-align: center;
+  width: 100%;
+  font-family: karla, helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .pricing-table {
-}
+
+  }
+
+
+  .footer {
+    font-family: karla, helvetica, sans-serif;
+  }
 
 
 
@@ -192,41 +200,48 @@ img {
   }
 }
 */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-@media (min-width: 600px){
-  img {max-width: 30%;
+
+@media (min-width: 600px) {
+
+.images-in-a-box img {
+    max-width: 30%;
   }
-}
 
-
-@media (min-width: 600px){
     .section-body-paragraphs {
       text-align: center;
-      width: 50%;
     }
 
-}
-@media (min-width: 600px) {
  .pricing-table {
   float: right;
-}
+  position: relative;
 }
 
-@media (min-width: 600px) {
-  .header__nav-list {
-    text-align: right;
-    position: absolute;
+  .rental-paragraph {
+    text-align: left;
+    max-width: 50%;
   }
-}
 
-@media (min-width: 600px) {
+
   .header__logo {
-  position: absolute;
+    position: fixed;
   left: 0;
   top: 10px;
+  max-width: 30%;
+  }
+
+    .banner__title {
+      padding: 48px;
+    }
+
+  .header__nav {
+    position: fixed;
+    right: 0;
+    top: 0;
   }
 }
+
+/*@media (min-width: 1180px) {
+  .banner__title {
+    padding: 62px
+  }
+}*/

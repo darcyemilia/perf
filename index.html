@@ -8,10 +8,11 @@
     <meta name="description" content="Vancouver Kayak Rental">
     <meta name="author" content="Darcy Drake">
 
-    <link rel="stylesheet" href="style.css">
+
 <!--    <link rel="stylesheet" href="reset.css">
 -->
     <link re="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -28,27 +29,29 @@
 -->
 
 <header>
-  <div class="container">
-
+  <div class="container header-container">
+<p> hello world</p>
     <img class="header__logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles Logo">
 
     <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-list-item">
+        <ul>
+          <li>
             <a class="header__nav-link" href="#About">About</a>
           </li>
-          <li class="header__nav-list-item">
+          <li>
             <a class="header__nav-link" href="#Rentals">Rentals</a>
           </li>
-          <li class="header__nav-list-item">
+          <li>
             <a class="header__nav-link" href="#Location">Location</a>
           </li>
         </ul>
     </nav>
   </div>
-    <div class="container">
-      <img src="images/kayak-bkgd.jpg" alt="Perfect Paddles Background">
+</header>
 
+    <div class="container">
+  <!--    <img src="images/kayak-bkgd.jpg" alt="Perfect Paddles Background">
+-->
       <section class="banner">
         <h1 class="banner__title">
           <div class="banner__title">
@@ -65,7 +68,7 @@
         </h1>
 
         <div class="transbox">
-          <p class="section-body-paragraphs">Rent our canoes year-round, take a lesson, or join a group tour.</p>
+          <p class="banner-sub-head">Rent our canoes year-round, take a lesson, or join a group tour.</p>
         </div>
 
       <button class="btn-signup">
@@ -73,7 +76,7 @@
       </button>
     </section>
   </div>
-  </header>
+
 
   <main>
     <section>
@@ -86,11 +89,11 @@
                 </p>
       </div>
 
+      <article class="images-in-a-box">
         <img src="images/sunset-kayak.jpg" alt="Kayak at Sunset">
-
         <img src="images/coffee-adventure.jpg" alt="Cup of Coffee">
-
         <img src="images/girl-in-kayak.jpg" alt="Girl in Green Kayak">
+      </article>
 
     </section>
 
@@ -100,11 +103,11 @@
 
       <h1 class="section-title">Rentals</h1>
 
-        <p class="section-body-paragraphs">
+        <p class="section-body-paragraphs rental-paragraph">
           All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.
-          <p class="section-body-paragraphs">Please note that we require 24 hours notice for all cancellations, and late returns will be charged accordingly.
+          <p class="section-body-paragraphs rental-paragraph">Please note that we require 24 hours notice for all cancellations, and late returns will be charged accordingly.
           </p>
-            <p class="section-body-paragraphs">Call (604) 604-6040 to book now!
+            <p class="section-body-paragraphs rental-paragraph">Call (604) 604-6040 to book now!
             </p>
                 <table class="pricing-table">
                   <thread>
@@ -164,8 +167,9 @@
 
       </section>
 
-<footer>
+<footer class="footer">
   <div class="container">
+
 
       <p>©2017 Perfect Paddles Kayak Co.
     Powered by HTML and CSS.
@@ -184,21 +188,21 @@
       <ul>
     social links
 
-    <li>  <a href="https://facebook.com" target="_blank">Facebook</a>
+    <li>  <a class="social-link" href="https://facebook.com" target="_blank">Facebook</a>
     </li>
-    <li>  <a href="https://twitter.com" target="_blank">Twitter</a>
+    <li>  <a class="social-link" href="https://twitter.com" target="_blank">Twitter</a>
     </li>
-    <li>  <a href="https://instagram.com" target="_blank">Instagram</a>
+    <li>  <a class="social-link" href="https://instagram.com" target="_blank">Instagram</a>
     </li>
-    <li>  <a href="https://pinterest.com" target="_blank">Pinterest</a>
+    <li>  <a class="social-link" href="https://pinterest.com" target="_blank">Pinterest</a>
     </li>
-    <li>  <a href="https://plus.google.com" target="_blank">Google+</a>
+    <li>  <a class="social-link" href="https://plus.google.com" target="_blank">Google+</a>
     </li>
       </ul>
     </nav>
   </div>
 </footer>
-    </main>
+</main>
 </div>
 </body>
 </html>
