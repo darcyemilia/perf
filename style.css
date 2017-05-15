@@ -1,7 +1,6 @@
 .container {
   max-width: 1140px;
-  margin: 0
-  border: 3px pink;
+  margin: auto;
   background-color: steelblue;
   background-size: cover;
   background-position: center center;
@@ -10,68 +9,60 @@
 }
 
 .header-container {
-  max-width: 1140px;
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  top: 0;
+  padding: 10px;
   margin: 0;
   background-color: black;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 10;
 }
 
 
 .header {}
 
-.header__nav {
-
-}
-
-
   .header__logo {
     display: block;
-    position: absolute;
-    left:auto;
-    top: auto;
-  max-width: 80%;
+    margin: auto;
+    max-width: 50%;
   }
-/*
-  .header__nav-list {
-    background-color: black;
-    text-align: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    content: "";
-}
-*/
+
   .header__nav-link {
+    display: inline-block;
     text-decoration: none;
     color: white;
-    display: inline-block;
     font-family: Karla-bold, helvetica,arial, sans-serif;
-    font-style: bold;
     text-transform: uppercase;
     font-size: 20px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     content: "";
+    padding: 20px;
+  }
+  .header__nav-link {
+    display: flex;
+    justify-content: space-between;
   }
 
-
-
-
-
-
+  .header__nav ul li {
+    display: inline-block;
+    list-style: none;
+  }
 
 
   .banner {
-    background-image: url("images/kayak-bkgd.jpg");
+    background: linear-gradient(
+      to top,
+    rgba(0,0,0, 0.35) 0%,
+    rgba(0,0,0, 0.25) 100%),
+    url("images/kayak-bkgd.jpg");
     background-size: cover;
-    background: linear-gradient (to top,
-      rgba (0,0,0, .25) 0%;
-      )
+  trans
   }
-
 
 .banner__title {
   padding: 36px;
@@ -81,6 +72,7 @@
 .banner__span {
   display: block;
 }
+
 
 .banner__span--enjoy {
   text-transform: uppercase;
@@ -122,7 +114,6 @@
   color: white;
   background-color: #e2574c;
   font-family: karla, helvetica, arial, sans-serif;
-  font-style: bold;
   border-radius: 75px;
   border: none;
   font-size: 20px;
@@ -130,8 +121,8 @@
   text-transform: uppercase;
   margin: 50px auto;
   display: block;
-
 }
+
 
 
 .main {
@@ -160,6 +151,7 @@
 .section-title {
   font-family: pacifico, cursive;
   font-size: 30px;
+  color: #646464;
   text-align: center;
 }
 
@@ -167,7 +159,7 @@
   text-align: center;
   width: 100%;
   font-family: karla, helvetica, sans-serif;
-  color: #2b2b2b;
+  color: #2d2d2d;
 }
 
 .banner-sub-head {
@@ -180,15 +172,42 @@
 }
 
 .pricing-table {
+  border-collapse: collapse;
+  border-color: red;
+  border-top: 5px;
+  font-family: karla, helvetica, sans-serif;
+  width: 100%;
+}
+.pricing-table th .pricing-table td {
+  border: 5px red;
+}
 
-  }
+th {
+border: 5px red;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
 
+td {
+  border: 5px red;
+}
+
+tr:hover {
+  background-color: #fbf6d9
+}
+
+td:nth-child(n+2) {
+  text-align: center;
+}
 
   .footer {
     font-family: karla, helvetica, sans-serif;
   }
 
 
+.map {
+  width: 100%;
+}
 
 
 /*
@@ -207,6 +226,11 @@
     max-width: 30%;
   }
 
+  .btn-signup:hover {
+    background-color: #b64036;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+  }
     .section-body-paragraphs {
       text-align: center;
     }
@@ -214,14 +238,20 @@
  .pricing-table {
   float: right;
   position: relative;
+  width: 45%;
 }
 
   .rental-paragraph {
     text-align: left;
-    max-width: 50%;
+    float: left;
+    max-width: 45%;
+    height: 100%;
   }
 
+.header-container {
+  position: fixed;
 
+}
   .header__logo {
     position: fixed;
   left: 0;
@@ -240,8 +270,7 @@
   }
 }
 
-/*@media (min-width: 1180px) {
-  .banner__title {
-    padding: 62px
-  }
-}*/
+
+@media (min-width: 1140px) {
+
+}
